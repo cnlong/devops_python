@@ -54,6 +54,7 @@ def ssh(host, oldpwd, newpwd, port=22, username='root'):
 
 
 def main():
+    # 注意，直接在Pycharm中运行不了，因为Pycharm不支持getpass
     newpassword = getpass.getpass("请输入新密码:")
     newpassword2 = getpass.getpass("请再次输入新密码:")
     if newpassword != newpassword2:
